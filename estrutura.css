@@ -1,0 +1,161 @@
+body{
+    background: url("http://seguimiento.gasco.cl/IMAGENES/degrade_azul_scroll.jpg") fixed ;
+    background-size: 100% 100%;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+#all{
+    width: 1000px;
+    height: 100%;
+    margin:auto;
+    background: white;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+#header{
+    width: 1000px;
+    height: 150px;
+    background: darkblue;
+}
+#menu{
+    width: 1000px;
+    height: 150px;
+    position: fixed;
+    color: white;
+}
+#menufundo{
+    width: 1000px;
+    height: 100px;
+    background: black;
+    opacity: 0.6;
+    position: fixed;
+    color: white; 
+}
+#menutxt{
+    font-size: 22px; 
+    float: right;
+    margin-top:50px;
+    margin-right: 4.5%;
+    float: right;
+}
+#tablebusca{
+    border: 2px;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    font-size: 22px;
+    color: white;
+    float: right;
+    margin-top: 10%;
+    position: relative;
+}
+#selectcidades{
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    height: 30px;
+    font-size: 16px;
+}
+#busca{
+    width: 400px;
+    height: 30px;
+    background: white;
+    float: right;
+    margin-right: 15%;
+    border-radius: 10px;
+    color: black;
+    text-align: right;
+    font-size: 22px;
+}
+
+#mainframe{
+    width: 100%;
+    height: 100%;
+}
+#menuesquerda{
+    width: 200px;
+    height: 365px;
+    font-size: 18px;
+    float: left;
+    box-shadow: 5px 5px 5px gray;
+    margin-left: 3%;
+    background-color: Lavender;
+}
+hr{
+    width: 160px;
+}
+
+#corpo{
+    width: 100%;
+    height: 800px;
+    margin: auto;
+    text-align: center;
+    border: 1px;
+}
+#tablecorpo{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#rodape{
+    width: 100%;
+    height: 190px;
+    background: navy;
+}
+#blockrod{
+    width: 200px;
+    height: 150px;
+    background: ;
+    color: white;
+    float: left;
+    margin-top: 2%;
+    margin-left: 11%;
+    font-size: 14px;
+}
+#footer{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: gray;
+}
+a:active{
+    color: darkred;
+}
+#banner{
+    width: 550px;
+    height: 300px;
+    
+    background: ;
+}
+#caixa{
+    width: 600px;
+    height: 400px;
+    background: ;
+    float: left;
+    margin:auto;
+    position: relative;
+    margin-left: 5%;
+}
+#divlogin{
+    margin-left: 50%;
+    width: 400px;
+    height: 250px;
+    background: ;
+    margin-top: 10%;
+    font-size: 24px;
+}
+#tablelogin{
+    margin-top: 10%;
+    background: green;
+    position: relative;
+}
+#image{
+    float: left;
+    margin-left: 10%;
+}

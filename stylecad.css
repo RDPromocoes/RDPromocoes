@@ -1,0 +1,121 @@
+#blockcadfield{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top: 2%;
+    margin-left: 35%;
+    background-color: ;
+}
+input[type=text]{
+    background-color: white;
+    
+    border:1px solid navy;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+input[type=password]{
+    background-color: white;
+    border:1px solid navy;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+input[type=submit]{
+    background-color: white;
+    border:1px solid navy;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+input[type=reset]{
+    background-color: white;
+    border:1px solid navy;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+textarea{
+    background-color: white;
+    border:1px solid navy;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+#block{
+    width: 200px;
+    height: 300px;
+    background: red;
+    float: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#login{
+    width: 400px;
+    height: 300px;
+    background: red;
+    float: left;
+    font-size: 28px ;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+#botaolog{
+    background: lightgray;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 20%;
+    font-family: tahoma;
+    font-size: 18px;
+}
+#blockcad{
+    width: 400px;
+    height: 200px;
+    //background: ;
+    float: left;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 24px;
+}
+#blockcontato{
+    width: 500px;
+    height: 100%;
+    //background: ;
+    margin: auto;
+    //margin-top: %;
+    font-family: tahoma;
+    font-size: 26px;
+
+}
+#blockpainelvendedor{
+    width: 500px;
+    height: 150px;
+    background:red ;
+    margin: auto;
+    margin-top: 10%;
+    font-family: tahoma;
+    font-size: 24px;
+}
+#botaopainel{
+    width: 35%;
+    background: darkblue;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 5%;
+}
+#blockcliven{
+    width: 500px;
+    height: 200px;
+    //background:;
+    margin: auto;
+    text-align: left;
+    font-family: tahoma;
+    font-size: 20px;
+    margin-top: 5%;
+}
+.botaoform{
+    background: lightgray;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    float: right;
+    margin-top: 2%;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
+    font-size: 18px;
+    box-shadow: 5px 5px 5px gray;
+}

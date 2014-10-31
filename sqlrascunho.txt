@@ -1,0 +1,27 @@
+Create table usuarios (
+ID Int UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT,
+login Varchar(30),
+senha Varchar(40),
+Primary Key (ID)) ENGINE = MyISAM;
+
+
+Read more: http://www.linhadecodigo.com.br/artigo/3561/criando-um-sistema-de-cadastro-e-login-com-php-e-mysql.aspx#ixzz3FK2PyxrT
+
+
+http://www.linhadecodigo.com.br/artigo/3561/criando-um-sistema-de-cadastro-e-login-com-php-e-mysql.aspx
+
+
+,'$sobrenome','$dia','$mes','$ano','$cpf','$cpf2','$rua','$numero','$estado','$cidade','$cep'
+,sobrenome,dia,mes,ano,cpf,cpf2,rua,numero,estado,cidade,cep
+
+$sobrenome = $_POST['sobrenome'];
+$dia = $_POST['dia'];
+$mes = $_POST['mes'];
+$ano = $_POST['ano'];
+$cpf = $_POST['cpf'];
+$cpf2 = $_POST['cpf2'];
+$rua = $_POST['rua'];
+$numero = $_POST['numero'];
+$estado = $_POST['estado'];
+$cidade = $_POST['cidade'];
+$cep = $_POST['cep'];
