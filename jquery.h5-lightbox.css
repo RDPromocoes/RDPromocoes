@@ -1,0 +1,110 @@
+body {
+}
+#b_fundo {
+	width: 960px;
+	margin: auto;
+}
+#texto {
+	margin:auto;
+}
+.menos {
+	width: 226px;
+	height: 28px;
+	font-family: Lucida Console;
+	color: #ffffff;
+	font-size: 18px;
+	background: url('img/m_0.jpg');
+	padding-left: 36px;
+	padding-top: 6px;
+	cursor: default;
+Filter:alpha(opacity:90);
+	margin-bottom: 2.5px;
+	margin-top: 2.5px;
+}
+.on {
+	width: 226px;
+	height: 28px;
+	font-family: Lucida Console;
+	color: #00ccff;
+	font-size: 18px;
+	background: url('img/m_on.jpg');
+	padding-left: 36px;
+	padding-top: 6px;
+	cursor: hand;
+}
+.off {
+	width: 226px;
+	height: 28px;
+	font-family: Lucida Console;
+	color: #ffffff;
+	font-size: 14px;
+	background: url('img/m_off.jpg');
+	padding-left: 36px;
+	padding-top: 6px;
+	cursor: default;
+Filter:alpha(opacity:60);
+}
+.menutodos {
+	position: absolute;
+	top: 15px;
+	left: -260;
+}
+.header {
+	width: 300px;
+	height: 120px;
+	right: 100%;
+	margin:auto;
+	top: 0px;
+	left: 25%;
+}
+a.back {
+	width: 256px;
+	height: 73px;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+	background: #fff url(codrops_back.png) no-repeat top left;
+}
+.scroll {
+	width: 133px;
+	height: 61px;
+	position: fixed;
+	bottom: 15px;
+	left: 150px;
+	background: #fff url(scroll.png) no-repeat top left;
+}
+.info {
+	text-align: right;
+}
+.wrapper {
+	width: 100%;
+	background: #ccc;
+}
+.wrapper figure {
+	float: left;
+	margin: 3em;
+}
+#lightbox {
+	position: fixed;
+	/* keeps the lightbox window in the current viewport */
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.7);
+}
+#lightbox p {
+	margin-right: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: right;
+	cursor: pointer;
+}
+#lightbox img {
+	max-width: 90%;
+	-webkit-box-shadow: 0 0 25px #111111;
+	-moz-box-shadow: 0 0 25px #111111;
+	box-shadow: 0 0 25px #111111;
+}

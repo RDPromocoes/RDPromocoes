@@ -10,7 +10,7 @@
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 		<script src="jquery.h5-lightbox.js"></script>
-		<script src="script_rota.js"></script>		
+		<script src="script.js"></script> 
     </head>
     <body>
         <div id="all">
@@ -69,42 +69,11 @@
                         <hr>
                         Móveis
                     </fieldset>
-                </div>			                
-                    <script>
-                        document.write("<div id='caixa'></div>");
-
-                        bannerRotativo();
-
-                        function bannerRotativo() {
-                            setTimeout("mostraBanner1()", 0000);
-                            setTimeout("mostraBanner2()", 4000);
-                            setTimeout("mostraBanner3()", 8000);
-                            setTimeout("mostraBanner4()", 12000);
-                            setTimeout("bannerRotativo()", 16000);
-                        }
-                        function mostraBanner1() {
-                            document.getElementById('caixa').innerHTML = "<div id='rotacao' style='width=550px; display: table; align: center; margin:auto;'>";
-                        }
-                         function mostraBanner2() {
-                            document.getElementById('caixa').innerHTML = "<div id='rotacao2' style='width=550px; display: table; align: center; margin:auto;'>";
-                        }
-                        function mostraBanner3() {
-                            document.getElementById('caixa').innerHTML = "<div id='rotacao3' style='width=550px; display: table; align: center; margin:auto;'>";
-                        }
-                        function mostraBanner4() {
-                            document.getElementById('caixa').innerHTML = "<div id='rotacao4' style='width=550px; display: table; align: center; margin:auto;'>";
-                        }
-                        $('.carousel').carousel({
-                            interval: 2000
-                        })
-                    </script>
-<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                </div>
                 <div id="corpo">
                     <div class="wrapper"> <br>
-                     <div id="local" style="margin-left: 5%; display: table;"><br />
-                     <?php include('home.php'); ?>
-						<!-- AQUI EH AREA --></div>
-                        
+						<?php include ('/contato/form.php'); ?>
+						</div>
 						<br>
 					</div>
 				</div>  

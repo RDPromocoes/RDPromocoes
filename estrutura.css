@@ -20,16 +20,20 @@ body{
     height: 150px;
     position: fixed;
     color: white;
+	z-index: 9999;
 }
 #menufundo{
+	z-index: 9999;
     width: 1000px;
-    height: 100px;
-    background: black;
-    opacity: 0.6;
+    height: 110px;
+    background: darkblue;
+    opacity: 0.9;
     position: fixed;
     color: white; 
 }
 #menutxt{
+	color: gray;
+	z-index: 9999;
     font-size: 22px; 
     float: right;
     margin-top:50px;
@@ -70,11 +74,9 @@ body{
 }
 #menuesquerda{
     width: 200px;
-    height: 365px;
     font-size: 18px;
     float: left;
-    box-shadow: 5px 5px 5px gray;
-    margin-left: 3%;
+    box-shadow: 5px 5px 5px black;
     background-color: Lavender;
 }
 hr{
@@ -82,9 +84,9 @@ hr{
 }
 
 #corpo{
-    width: 100%;
-    height: 800px;
-    margin: auto;
+	width: 960px;
+	height: 100%;
+	margin: auto;
     text-align: center;
     border: 1px;
 }
@@ -115,11 +117,10 @@ hr{
     margin-top: 5%;
 }
 a:link{
-    color: white;
-    text-decoration: none;
+    color: black;
 }
 a:visited{
-    color: white;
+    color: black;
 }
 a:hover{
     color: gray;
@@ -130,8 +131,6 @@ a:active{
 #banner{
     width: 550px;
     height: 300px;
-    
-    background: ;
 }
 #caixa{
     width: 600px;

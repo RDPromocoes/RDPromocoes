@@ -1,0 +1,7 @@
+*.sublime-*
+.print/*
+export*
+[Tt]humbs.db
+.idea/*
+exportToHTML/*
+
