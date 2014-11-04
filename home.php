@@ -3,7 +3,7 @@ $conn = mysql_connect("localhost","root","davidjr");
 mysql_set_charset('utf8',$conn);
 $db = mysql_select_db("rdpromo");
 $busca = "SELECT * FROM site ORDER BY `id` DESC"; 
-$total_reg = "4"; // número de registros por página
+$total_reg = "5"; // número de registros por página
 $pagina = isset($_GET['pagina']) ? $_GET['pagina'] : '';
 //$pagina = $_GET['pagina']; 
 if (!$pagina) { 
@@ -28,7 +28,7 @@ echo "<div style='float: left; margin-left: 2%; margin-top: 2%; border:outset;'>
  // agora vamos criar os botões "Anterior e próximo" 
  $anterior = $pc -1; 
  $proximo = $pc +1; 
- echo "<b><div style='float: right;'>";
+ echo "<b><div style='float: right; margin-top: 3%;'>";
  echo "<a href='index.php'>Inicial</a> | ";
  if ($pc>1) { 
  echo " <a href='?pagina=$anterior'><-Anterior</a> ";
