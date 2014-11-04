@@ -97,6 +97,13 @@ hr {
 	text-align: center;
 	border: 1px;
 }
+#produto{
+	 float: left; 
+	 margin-left: 2%; 
+	 margin-top: 2%; 
+	 border:outset;
+	 text-align:center;	
+}
 .wrapper{
 	margin-top: 30%;
 	margin-left: 15%; 
@@ -166,4 +173,12 @@ a:active {
 #image {
 	float: left;
 	margin-left: 10%;
+}
+#up{
+	margin: 10%;	
+}
+#formulario{
+	margim: 10%;
+	display:block;
+	font-size:24px;
 }

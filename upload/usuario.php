@@ -1,15 +1,20 @@
 <?php
-	
+
 	//Conexão com o banco de dados
 	require("conecta.php");
 	
 	//Verifico se usuario clicou em cadastrar
 	if($_POST['cadastrar']){
+mysql_query("SET NAMES 'utf8'");
+mysql_query('SET character_set_connection=utf8');
+mysql_query('SET character_set_client=utf8');
+mysql_query('SET character_set_results=utf8');
 		
 		//Recebendo os campos
 		$nome	=	$_POST['nome'];
 		$descricao	=	$_POST['descricao'];
 		$valor	=	$_POST['valor'];
+		$cat = $_POST['cat'];
 		$idvend	=	$_POST['idvend'];
 		$img =	$_FILES['img'];
 		
@@ -19,10 +24,10 @@
 		if(!empty($img["name"])){
 			
 			//Largura máxima em pixels
-			$largura = 1080;
+			$largura = 1920;
 			
 			//Altura máxima em pixels
-			$altura = 1920;
+			$altura = 1080;
 			
 			//Tamanho máximo em bytes
 			$tamanho = 2048000;
@@ -66,13 +71,13 @@
 				move_uploaded_file($img["tmp_name"], $caminhoImagem);
 				
 				//Insere no banco de dados
-				$sql = mysql_query("INSERT INTO site (nome, descricao, idvend, valor, img)  VALUES('".$nome."','".$descricao."','".$idvend."',".$valor.",'".$nomeImagem."');");
+				$sql = mysql_query("INSERT INTO site (nome, descricao, idvend, valor, cat, img)  VALUES('".$nome."','".$descricao."','".$idvend."',".$valor.",'".$cat."','".$nomeImagem."');");
 				
 				echo mysql_error();
 				
 				//Verifico se os dados forem inseridos com sucesso
 				if($sql){
-					echo "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=http://127.0.0.1/HEITOR/index.htm'>";
+					echo "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=../index.php'>";
 				}else {
 				echo "Erro Não Cadastrado";	
 				}

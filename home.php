@@ -18,11 +18,13 @@ $tp = $tr / $total_reg; // verifica o número total de páginas
 // vamos criar a visualização
 
 while ($dados = mysql_fetch_array($limite)) { 
-echo "<div style='float: left; margin-left: 2%; margin-top: 2%; border:outset;'>";
+echo "<link href='estrutura.css' rel='stylesheet' type='text/css'/>
+<div id='produto'>";
 	echo "<h2>" .$dados['nome']."<br></h2>";
 	echo "<img src='upload/img/".$dados['img']."' width='140' height='120' /><br />";
     echo "<br /><b>R$ ".$dados['valor']."</b><br />";
     echo "<br /><i>Descrição:<br /></i><b><div style='width:200px; height:80px;'>" .$dados['descricao']. "</div></b>";
+	echo "<br />Categoria: " .$dados['Cat']."<br />";
 	echo "<a href='#'><img src='img/b_prod.png'></a>";
 	echo "</div>"; } 
  // agora vamos criar os botões "Anterior e próximo" 
