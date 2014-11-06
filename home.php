@@ -23,9 +23,9 @@ echo "<link href='estrutura.css' rel='stylesheet' type='text/css'/>
 	echo "<h2>" .$dados['nome']."<br></h2>";
 	echo "<img src='upload/img/".$dados['img']."' width='140' height='120' /><br />";
     echo "<br /><b>R$ ".$dados['valor']."</b><br />";
-    echo "<br /><i>Descrição:<br /></i><b><div style='width:200px; height:80px;'>" .$dados['descricao']. "</div></b>";
+    echo "<br /><i>Descrição:<br /></i><b><div>" .$dados['descricao']. "</div></b>";
 	echo "<br />Categoria: " .$dados['Cat']."<br />";
-	echo "<a href='#'><img src='img/b_prod.png'></a>";
+	echo "<a href='produto.php?id=".$dados['id']."'><img src='img/b_prod.png'></a>";
 	echo "</div>"; } 
  // agora vamos criar os botões "Anterior e próximo" 
  $anterior = $pc -1; 
