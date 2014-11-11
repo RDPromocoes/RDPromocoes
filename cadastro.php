@@ -1,5 +1,6 @@
 <?php
 
+$id_sec = $_POST['id_sec'];
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
 $dia = $_POST['dia'];
@@ -16,8 +17,8 @@ $cep2 = $_POST['cep2'];
 $email = $_POST['email'];
 $senha = MD5($_POST['senha']);   
 
-$connect = mysql_connect('localhost','root','123');
-$db = mysql_select_db('rd_promocoes_db');
+$connect = mysql_connect('localhost','root','davidjr');
+$db = mysql_select_db('rdprod');
 $query_select = "SELECT email FROM usuario WHERE email = '$email'";
 $select = mysql_query($query_select,$connect);
 $array = mysql_fetch_array($select);
@@ -33,7 +34,7 @@ $logarray = $array['email'];
                 die();
  
             }else{
-               $query = "INSERT INTO usuario (nome,sobrenome,dia,mes,ano,cpf,cpf2,rua,numero,estado,cidade,cep,cep2,email,senha) VALUES ('$nome','$sobrenome','$dia','$mes','$ano','$cpf','$cpf2','$rua','$numero','$estado','$cidade','$cep','$cep2','$email','$senha')";
+               $query = "INSERT INTO usuario (id_sec, nome,sobrenome,dia,mes,ano,cpf,cpf2,rua,numero,estado,cidade,cep,cep2,email,senha) VALUES ('id_sec','$nome','$sobrenome','$dia','$mes','$ano','$cpf','$cpf2','$rua','$numero','$estado','$cidade','$cep','$cep2','$email','$senha')";
                $insert = mysql_query($query,$connect);
                  
                 if($insert){

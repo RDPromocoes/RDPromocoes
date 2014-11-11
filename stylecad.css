@@ -1,14 +1,13 @@
 #blockcadfield{
     width: 400px;
-    height: 400px;
+    height: 100%;
     margin: auto;
     margin-top: 2%;
     margin-left: 35%;
     background-color: ;
 }
 input[type=text]{
-    background-color: white;
-    
+    background-color: white;    
     border:1px solid navy;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
@@ -118,4 +117,12 @@ textarea{
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;;
     font-size: 18px;
     box-shadow: 5px 5px 5px gray;
+}
+#tablelog{
+    font-size: 30px;
+}
+#tablelog input[type=text]{
+    background-color: white;
+    border:1px solid navy;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }

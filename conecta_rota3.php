@@ -1,5 +1,5 @@
 ﻿<?php
-$banco = 'rdpromo';
+$banco = 'rdprod';
 $usuario = 'root';
 $senha = 'davidjr';
 $hostname = 'localhost';
@@ -13,15 +13,20 @@ $query = "SELECT * FROM site WHERE idvend = '".$_POST['id']."' ORDER BY id DESC 
 $resultado = mysql_query($query,$conn);
 while ($linha = mysql_fetch_array($resultado)){
 	echo "	<link href='estrutura.css' rel='stylesheet' type='text/css'/>
-			<div class='rotacao'>
-			<h2>".$linha['nome']."<br></h2>
-			<b>
-            R$ ".$linha['valor']."<br />
-            </b><br />
-			<img src='upload/img/".$linha['img']."' width='400' height='320' /><br />
-			<br />
-            </div>";
-	}
+				<div class='rotacao'>
+				
+				<span><img src='upload/img/".$linha['img']."' width='400' height='320' /><span>
+				<div>
+				<h2>".$linha['nome']."</h2>
+			
+				<b>
+            	R$ ".$linha['valor']."<br/></b>
+            	Descrição:<br>"
+            	.$linha['descricao']."
+            	</div>
+				
+            	</div>";
+		}
 }
 mysql_close();
 ?>

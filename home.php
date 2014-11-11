@@ -1,9 +1,9 @@
 ﻿<?php 
 $conn = mysql_connect("localhost","root","davidjr"); 
 mysql_set_charset('utf8',$conn);
-$db = mysql_select_db("rdpromo");
+$db = mysql_select_db("rdprod");
 $busca = "SELECT * FROM site ORDER BY `id` DESC"; 
-$total_reg = "5"; // número de registros por página
+$total_reg = "4"; // número de registros por página
 $pagina = isset($_GET['pagina']) ? $_GET['pagina'] : '';
 //$pagina = $_GET['pagina']; 
 if (!$pagina) { 
@@ -21,16 +21,17 @@ while ($dados = mysql_fetch_array($limite)) {
 echo "<link href='estrutura.css' rel='stylesheet' type='text/css'/>
 <div id='produto'>";
 	echo "<h2>" .$dados['nome']."<br></h2>";
-	echo "<img src='upload/img/".$dados['img']."' width='140' height='120' /><br />";
+	echo "<img src='upload/img/".$dados['img']."' width='240' height='220' /><br />";
     echo "<br /><b>R$ ".$dados['valor']."</b><br />";
-    echo "<br /><i>Descrição:<br /></i><b><div style='width:200px; height:80px;'>" .$dados['descricao']. "</div></b>";
+    echo "<br /><i>Descrição:<br /></i><b><div>" .$dados['descricao']. "</div></b>";
 	echo "<br />Categoria: " .$dados['Cat']."<br />";
-	echo "<a href='#'><img src='img/b_prod.png'></a>";
-	echo "</div>"; } 
- // agora vamos criar os botões "Anterior e próximo" 
+	echo "<a href='produto.php?id=".$dados['id']."'><img src='img/b_prod.png'></a>";
+	echo "</div>"; 
+	} 
+ // botões "Anterior e próximo" 
  $anterior = $pc -1; 
  $proximo = $pc +1; 
- echo "<b><div style='float: right; margin-top: 3%;'>";
+ echo "<b><div id='end'>";
  echo "<a href='index.php'>Inicial</a> | ";
  if ($pc>1) { 
  echo " <a href='?pagina=$anterior'><-Anterior</a> ";

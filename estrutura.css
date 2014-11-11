@@ -4,51 +4,71 @@ body {
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 #all {
-	width: 90%;
 	height: 100%;
-	margin: auto;
+	left: 68px;
+	right: 68px;
+	margin-top: -1%;
 	background: white;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 #header {
-	position: relative;
+	height: 100%;
+	left: 68px;
+	right: 68px;
+	height: 250px;
+	background: url("http://artisanslabel.com/guitar_center/gain/wp-content/uploads/2013/02/mesh-background.jpg");
+}
+#ban_rota{
+	margin-left: 30%;
 	width: 100%;
-	height: 150px;
-	background: darkblue;
 }
 .rotacao {
+	position:absolute;
+	width: 700px;
+	height: 400px;
 	float: left;
 	margin: auto;
-	margin-left: 90%;
+	margin-left: 0%;
+	margin-top: 2.5%;
+	border:outset;
 }
 .rotacao b {
 	font-size: 32px;
 	color: red;
 }
+.rotacao img{
+	float: left;
+	margin: 2%
+	
+}
+.rotacao div{
+	float: left;
+	margin-left: 2%;
+}
 #menu {
 	width: 90%;
 	height: 150px;
 	position: fixed;
-	color: white;
+	color: black;
 	z-index: 9999;
+	background: red;
 }
-#menufundo {
-	z-index: 9999;
-	width: 89.25%;
-	height: 110px;
-	background: darkblue;
-	opacity: 0.9;
-	position: fixed;
-	color: white;
+
+#logomenu{
+	float: left;
+	position: absolute;
+	z-index: +1;
+	opacity: inherit;
+	margin-top: 30px;
 }
-#menutxt {
-	color: gray;
-	z-index: 9999;
-	font-size: 22px;
-	float: right;
-	margin-top: 50px;
-	margin-right: 4.5%;
-	float: right;
+#busca input[type=text]{
+    background-color: white;
+    width: 490px;
+    height: 40px;
+    font-size: 29px;
+    border-radius: 15px;
+    border:1px solid navy;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
 #tablebusca {
 	border: 2px;
@@ -66,48 +86,81 @@ body {
 	height: 30px;
 	font-size: 16px;
 }
-#busca {
-	width: 400px;
-	height: 30px;
-	background: white;
-	float: right;
-	margin-right: 15%;
-	border-radius: 10px;
-	color: black;
-	text-align: right;
-	font-size: 22px;
-}
 #mainframe {
-	width: 100%;
 	height: 100%;
+	left: 68px;
+	right: 68px;	
 }
 #menuesquerda {
-	width: 200px;
-	font-size: 18px;
+	width: 230px;
+	height: 500px;
+	font-size: 24px;
+	text-align: center;
 	float: left;
-	box-shadow: 5px 5px 5px black;
-	background-color: Lavender;
+	box-shadow: 5px 5px 5px gray;
+	background: url("http://artisanslabel.com/guitar_center/gain/wp-content/uploads/2013/02/mesh-background.jpg");
+	color: gray;
 }
 hr {
-	width: 160px;
+	width: 170px;
 }
 #corpo {
-	width: 960px;
 	height: 100%;
+	left: 68px;
+	right: 68px;
 	text-align: center;
 	border: 1px;
 }
 #produto{
 	 float: left; 
-	 margin-left: 2%; 
-	 margin-top: 2%; 
-	 border:outset;
-	 text-align:center;	
+	 text-align:center;
+	 width: 300px;
+	 height: 520px;
+	 border:ridge;
+	 border-radius: 10px;
+	 border-color:#828181;
+	 margin-left: 7%; 
+	 margin-top: 10px;
 }
-.wrapper{
-	margin-top: 30%;
-	margin-left: 15%; 
+#wrapper{
+	width:100%;
 	display: table;
+}
+#end{
+	display:block;
+	margin-top: 30%;
+	margin-left: 45%;
+	margin-bottom: 20px;
+	
+}
+#produto2{
+	 margin-top: -12%; 
+	 font-size:28px;
+	 font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+#produto3{
+	width: 67.5%;
+	margin: auto;
+}
+#produto2 h1{
+	text-align: center;
+}
+#produto2 h2{
+	text-align: center;
+}
+#produto2 #img {
+	margin: auto;
+	text-align:center;	
+}
+#valor{
+	text-align: center;
+	font-size: 70px;
+	color: darkred;
+}
+.wrapper2{ 
+	margin-left: 30%;
+	display: table;
+	text-align: center;
 		
 }
 #tablecorpo {
@@ -115,7 +168,8 @@ hr {
 	border-collapse: collapse;
 }
 #rodape {
-	width: 100%;
+	left: 68px;
+	right: 68px;
 	height: 190px;
 	background: navy;
 }
@@ -136,16 +190,17 @@ hr {
 	margin-top: 5%;
 }
 a:link {
-	color: black;
+	color: gray;
+	text-decoration: none;
 }
 a:visited {
-	color: black;
-}
-a:hover {
 	color: gray;
 }
-a:active {
+a:hover {
 	color: darkred;
+}
+a:active {
+	color: lightgray;
 }
 #banner {
 	width: 550px;
@@ -154,16 +209,21 @@ a:active {
 #caixa {
 	float: left;
 	margin: auto;
-	position: relative;
 	margin-left: 5%;
+	background: ;
 }
 #divlogin {
 	margin-left: 50%;
 	width: 400px;
 	height: 250px;
- background:;
+ 	background: ;
 	margin-top: 10%;
 	font-size: 24px;
+}
+#mainframe .imagemlogin{
+	margin-left: 15%;
+	margin-top: -5%;
+	float: left;
 }
 #tablelogin {
 	margin-top: 10%;
@@ -178,7 +238,7 @@ a:active {
 	margin: 10%;	
 }
 #formulario{
-	margim: 10%;
+	margin: 10%;
 	display:block;
 	font-size:24px;
 }

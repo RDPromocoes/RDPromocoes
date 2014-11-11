@@ -1,33 +1,20 @@
 
-<?php 
-    
-       session_start(); 
-
-       if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true)) { 
-        unset($_SESSION['email']); 
-        unset($_SESSION['senha']); 
-        header('location:login.php'); 
-        } 
-        $logado = $_SESSION['email']; 
-
-        //echo "Bem vindo" . $_SESSION['email'];
-    ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>RD Promoções</title>
         <link href="estrutura.css" rel="stylesheet" type="text/css"/>
+        <link href="menucss.css" rel="stylesheet" type="text/css"/>
         <link href="stylecad.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="all">
+        <div id="header">
             <?php include('menu.php') ?>
-            <div id="header">
-               <?php include('cabecalho.php');?> 
             </div>
             <div id="mainframe">
-               <?php include('menuleft.php');?>
+               <?php include('menulateral.php');?>
 
                 <div id="blockcadfield">
                     <form action="cadastro.php" method="POST">
