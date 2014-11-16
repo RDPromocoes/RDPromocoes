@@ -3,7 +3,7 @@ $conn = mysql_connect("localhost","root","davidjr");
 mysql_set_charset('utf8',$conn);
 $db = mysql_select_db("rdprod");
 $busca = "SELECT * FROM site ORDER BY `id` DESC"; 
-$total_reg = "4"; // número de registros por página
+$total_reg = "8"; // número de registros por página
 $pagina = isset($_GET['pagina']) ? $_GET['pagina'] : '';
 //$pagina = $_GET['pagina']; 
 if (!$pagina) { 

@@ -1,21 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>RD Promoções</title>
-        <link href="estrutura.css" rel="stylesheet" type="text/css"/>
-        <link href="menucss.css" rel="stylesheet" type="text/css"/>
-        <link href="stylecad.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <div id="all">
-        <div id="header">
-            <?php include('menu.php') ?>
-            </div>
-            <div id="mainframe">
-               <?php include('menulateral.php');?>
-
                 <div id="blockcadfield">
                     <form action="cadastro.php" method="POST">
                         <table cellspacing="5" id="tablelog">
@@ -121,9 +103,4 @@
                             
                         </table>
                     </form>
-                </div>
-            </div>
-            <?php include('rodape.php'); ?>
-        </div>
-    </body>
-</html>
+                    </div>

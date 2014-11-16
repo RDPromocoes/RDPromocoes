@@ -128,7 +128,7 @@ hr {
 }
 #end{
 	display:block;
-	margin-top: 30%;
+	margin-top: 60%;
 	margin-left: 45%;
 	margin-bottom: 20px;
 	
@@ -250,4 +250,18 @@ a:active {
 	margin: 10%;
 	display:block;
 	font-size:24px;
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #produto, #produto * {
+    visibility: visible;
+  }
+  #produto {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
 }

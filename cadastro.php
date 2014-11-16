@@ -1,6 +1,6 @@
 <?php
 
-$id_sec = $_POST['id_sec'];
+$id_sec = 1;
 $nome = $_POST['nome'];
 $sobrenome = $_POST['sobrenome'];
 $dia = $_POST['dia'];
@@ -34,7 +34,7 @@ $logarray = $array['email'];
                 die();
  
             }else{
-               $query = "INSERT INTO usuario (id_sec, nome,sobrenome,dia,mes,ano,cpf,cpf2,rua,numero,estado,cidade,cep,cep2,email,senha) VALUES ('id_sec','$nome','$sobrenome','$dia','$mes','$ano','$cpf','$cpf2','$rua','$numero','$estado','$cidade','$cep','$cep2','$email','$senha')";
+               $query = "INSERT INTO usuario (id_sec, nome,sobrenome,dia,mes,ano,cpf,cpf2,rua,numero,estado,cidade,cep,cep2,email,senha) VALUES ('$id_sec','$nome','$sobrenome','$dia','$mes','$ano','$cpf','$cpf2','$rua','$numero','$estado','$cidade','$cep','$cep2','$email','$senha')";
                $insert = mysql_query($query,$connect);
                  
                 if($insert){
